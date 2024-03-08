@@ -41,18 +41,18 @@ const articulo = {
   }
   
   function mostrarLista() {
-    alert("Tu lista de compras:");
+    let listaString = "Tu lista de compras:\n";
     if (listaDeCompras.articulos.length === 0) {
-      alert("¡La lista está vacía!");
+      listaString += "¡La lista está vacía!";
     } else {
       for (const articulo of listaDeCompras.articulos) {
-        alert(`- ${articulo.nombre} (x${articulo.cantidad}) - $${articulo.precio}`);
+        listaString += `- ${articulo.nombre} (x${articulo.cantidad}) - $${articulo.precio}\n`;
       }
       const total = calcularTotal();
-      alert(`Total: $${total}`);
+      listaString += `Total: $${total}`;
     }
+    alert(listaString);
   }
-
   
   function eliminarArticulo() {
     const nombre = prompt("Ingresa el nombre del artículo a eliminar:");
