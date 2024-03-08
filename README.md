@@ -1,1 +1,2 @@
 # PreEntrega2-Hiza-JS
+La entrega consiste en un programa que permite almacenar una lista de artículos de compra, su cantidad y el precio. Se puede acceder a la misma lista, modificarla y mostrar el total del valor de los mismos.
